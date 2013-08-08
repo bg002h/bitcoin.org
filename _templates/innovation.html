@@ -2,6 +2,9 @@
 layout: base
 id: innovation
 ---
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+
 <h1>{% translate pagetitle %}</h1>
 <p class="summarytxt">{% translate summary %}</p>
 
@@ -25,3 +28,49 @@ id: innovation
 
 <h2><img class="titleicon" src="/img/ico_solve.svg" alt="Icon" />{% translate trust %}</h2>
 <p>{% translate trusttext %}</p>
+
+{% else %}
+
+<h1>{% translate pagetitle %}</h1>
+<p class="summarytxt">{% translate summary %}</p>
+
+<h2><img class="titleicon" src="/img/ico_democracy.svg" alt="Icon" />{% translate collaboration %}</h2>
+<p>{% translate collaborationtext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_lock.svg" alt="Icon" />{% translate control %}</h2>
+<p>{% translate controltext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_storm.svg" alt="Icon" />{% translate efficiency %}</h2>
+<p>{% translate efficiencytext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_own.svg" alt="Icon" />{% translate freedom %}</h2>
+<p>{% translate freedomtext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_international.svg" alt="Icon" />{% translate global %}</h2>
+<p>{% translate globaltext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_neutrality.svg" alt="Icon" />{% translate neutrality %}</h2>
+<p>{% translate neutralitytext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_transparency.svg" alt="Icon" />{% translate transparency %}</h2>
+<p>{% translate transparencytext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_solve.svg" alt="Icon" />{% translate trust %}</h2>
+<p>{% translate trusttext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_conf.svg" alt="Icon" />{% translate modern %}</h2>
+<p>{% translate moderntext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_micro.svg" alt="Icon" />{% translate economy %}</h2>
+<p>{% translate economytext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_network.svg" alt="Icon" />{% translate resiliency %}</h2>
+<p>{% translate resiliencytext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_simple.svg" alt="Icon" />{% translate supply %}</h2>
+<p>{% translate supplytext %}</p>
+
+<h2><img class="titleicon" src="/img/ico_math.svg" alt="Icon" />{% translate math %}</h2>
+<p>{% translate mathtext %}</p>
+
+{% endcase %}
